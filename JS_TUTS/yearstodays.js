@@ -1,6 +1,6 @@
 var d=1;
-function days(n){
+function year(n){
     d=n*365;
     return d;
 }
-console.log(days(25));
+console.log(year(25));
