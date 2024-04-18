@@ -14,7 +14,6 @@ var a=[1,2,3,4,5,7,8,9,10];
 // a.splice(5,0,6);
 // console.log(a);
 var a = [1, 2, 3, 4, 5, 7, 8, 9, 10];
-
 function inser() {
     var newA = []; // Create a new array to store the modified elements
     var indexTo = 5; // Index where you want to insert the new element
