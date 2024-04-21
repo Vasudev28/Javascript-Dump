@@ -23,22 +23,19 @@
 // }prime(7);
 // JavaScript Program to print prime numbers between the two numbers
 
-var lower = 2;
-var higher = 20;
-
-console.log(`The prime numbers between ${lower} and ${higher} are given below:`);
+function isPrime(n)
 
 // looping from higher to lower for reverse order
-for (let i = higher; i >= lower; i--) {
-    var flag = 0;
+for (let i =n; i >=2; i--) {
+    var c = 0;
     // looping through 2 to i for the primality test 
     for (let j = 2; j < i; j++) {
         if (i % j == 0) {
-            flag = 1;
+            c = 1;
             break;
         }
     }
-    if (flag == 0 && i != 1) {
+    if (c == 0 && i != 1) {
         console.log(i);
     }
-}
+}isPrime(20)
