@@ -23,7 +23,7 @@
 // }prime(7);
 // JavaScript Program to print prime numbers between the two numbers
 
-function isPrime(n)
+function isPrime(n){
 
 // looping from higher to lower for reverse order
 for (let i =n; i >=2; i--) {
@@ -38,4 +38,5 @@ for (let i =n; i >=2; i--) {
     if (c == 0 && i != 1) {
         console.log(i);
     }
+}
 }isPrime(20)
