@@ -1,23 +1,66 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
+<h1></h1>
+<script>
+// var v=document.getElementsByTagName("body");
+// v[0].appendChild(a);
+// var a = document.createElement("div");
+// var b = document.createElement("span");
+// var c= document.getElementsByTagName("div")[0];
+// a.appendChild(b);
+// console.log(document);
+// var v = document.getElementsByTagName("h1");
+// var para = document.createElement('p');
+// para.innerText="Vanakkam";
+// v[0].appendChild(para);
+var a=document.createELement('div');
+var b=document.createElement
+</script>
 
-<h1>The Document Object</h1>
-<h2>The getElementsByTagName() Method</h2>
-
-<p>An unordered list:</p>
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
-<p>The innerHTML of the second li element is:</p>
-<p id="demo"></p>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert Empty Element using DOM</title>
+</head>
+<body>
+<!-- 
+<div id="parentElement">
+    <p>This is the parent element.</p>
+</div> -->
 
 <script>
-const collection = document.getElementsByTagName("li");
-document.getElementById("demo").innerHTML = collection[1].innerHTML;
+// created a span and inserted a p inside it.
+
+
+// Step 1: Select the parent element
+// var parentElement = document.createElement("span");
+// // var parent=document.getElementsByTagName("span");
+
+// // Step 2: Create the new empty element
+// var newEmptyElement = document.createElement("p");
+
+// // Step 3: Insert the new empty element inside the parent element
+// parentElement.appendChild(newEmptyElement);
+// document.body.appendChild(parentElement);
+
+var a = document.createElement("h1");
+a.innerText="This is a Heading";
+var b = document.createElement("p");
+b.innerText="this is a para";
+a.appendChild(b);
+document.body.appendChild(a);
+console.log(document);
+var v= document.createElement("div");
+v.innerText="This is a Div";
+a.appendChild(v);
+var u=document.createElement("div");
+u.innerText="This is another Div inside";
+v.appendChild(u);
 </script>
 
 </body>
