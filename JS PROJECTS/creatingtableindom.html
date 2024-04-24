@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,tr,td{
-            border: 2px solid black;
+        body{
+            background-color: bisque;
+        }
+        table,th,tr,td{
+            border: 2px solid grey;
+            background-color: bisque;
+            
+        }
+        table{
+            border-radius: 10px;
+        }
+        img{
+            width:90px;
+            height:90px;
+            border-radius: 10px;
+        }
+        img:hover{
+            width:120px;
+            height:120px;
+            transition: 400ms;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -133,14 +152,286 @@ var pro=  [
             "count": 470
         }
     }]
-        var a=document.createElement("table");
-        document.getElementsByTagName("table");
-        var ro1=document.createElement("th");
-        document.getElementsByTagName("th");
-        a.appendChild(ro1);
-        console.log(ro1);
+    // FIRST ROW ---->
+    
+    var a=document.createElement("table");
+    var row=document.createElement("tr");
+    a.appendChild(row);   
+    var ro1=document.createElement("th");
+    d1=document.createTextNode("ID");
+    ro1.appendChild(d1);
+    row.appendChild(ro1);
+
+    var ro2=document.createElement("th");
+    a.appendChild(row);
+    d2=document.createTextNode("TITLE");
+    ro2.appendChild(d2);
+    row.appendChild(ro2);
+
+    var ro3=document.createElement("th");
+    a.appendChild(row);
+    d3=document.createTextNode("PRICE");
+    ro3.appendChild(d3);
+    row.appendChild(ro3);
+
+    var ro4=document.createElement("th");
+    a.appendChild(row);
+    d4=document.createTextNode("DESCRIPTION");
+    ro4.appendChild(d4);
+    row.appendChild(ro4);
+
+    var ro5=document.createElement("th");
+    a.appendChild(row);
+    d5=document.createTextNode("CATEGORY");
+    ro5.appendChild(d5);
+    row.appendChild(ro5);
+
+    var ro6=document.createElement("th");
+    a.appendChild(row);
+    d6=document.createTextNode("IMAGE");
+    ro6.appendChild(d6);
+    row.appendChild(ro6);
+    document.body.appendChild(a);
+    // console.log(ro1);
+    
+        // SECOND ROW ----->
+
+    //     var dat1=document.createElement("tr");
+    //     a.appendChild(dat1);
+    //   dat2.appendChild(data2);
+
+    //     var dat3=document.createElement("tr");
+    //     a.appendChild(dat3);
+    //     var data3=document.createTextNode(pro[0].price);
+    //     dat3.appendChild(data3);
+
+    //     var dat4=document.createElement("tr");
+    //     a.appendChild(dat4);
+    //     var data4=document.createTextNode(pro[0].description);
+    //     dat4.appendChild(data4);
+
+    //     var dat5=document.createElement("tr");
+    //     a.appendChild(dat5);
+    //     var data5=document.createTextNode(pro[0].category);
+    //     dat5.appendChild(data5);
+
+    //     var dat6=document.createElement("tr");
+    //     a.appendChild(dat6);
+    //     var data6=document.createTextNode(pro[0].image);
+    //     dat6.appendChild(data6);   var data1=document.createTextNode(pro[0].id);
+    //     dat1.appendChild(data1);
         
-        
+    //     var dat2=document.createElement("tr");
+    //     a.appendChild(dat2);
+    //     var data2=document.createTextNode(pro[0].title);
+        var row2=document.createElement("tr");
+        a.appendChild(row2);
+        var dat1=document.createElement("td");
+        row2.appendChild(dat1);
+        dat1.innerText=pro[0].id;
+
+        var dat2=document.createElement("td");
+        row2.appendChild(dat2);
+        dat2.innerText=pro[0].title;
+
+        var dat3=document.createElement("td");
+        row2.appendChild(dat3);
+        dat3.innerText=pro[0].price;
+
+        var dat4=document.createElement("td");
+        row2.appendChild(dat4);
+        dat4.innerText=pro[0].description;
+
+        var dat5=document.createElement("td");
+        row2.appendChild(dat5);
+        dat5.innerText=pro[0].category;
+
+        var dat6=document.createElement("td");
+        row2.appendChild(dat6);
+        var img1=document.createElement("img");
+        img1.src = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
+        dat6.appendChild(img1);
+
+        // THIRD ROW ---->
+
+        var row3=document.createElement("tr");
+        a.appendChild(row3);
+        var dat7=document.createElement("td");
+        row3.appendChild(dat7);
+        dat7.innerText=pro[1].id;
+
+        var dat8=document.createElement("td");
+        row3.appendChild(dat8);
+        dat8.innerText=pro[1].title;
+
+        var dat9=document.createElement("td");
+        row3.appendChild(dat9);
+        dat9.innerText=pro[1].price;
+
+        var dat10=document.createElement("td");
+        row3.appendChild(dat10);
+        dat10.innerText=pro[1].description;
+
+        var dat11=document.createElement("td");
+        row3.appendChild(dat11);
+        dat11.innerText=pro[1].category;
+
+        var dat12=document.createElement("td");
+        row3.appendChild(dat12);
+        var img2=document.createElement("img");
+        img2.src = "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg";
+        dat12.appendChild(img2);
+
+    //    FOURTH ROW--->
+          
+    var row4=document.createElement("tr");
+        a.appendChild(row4);
+        var dat13=document.createElement("td");
+        row4.appendChild(dat13);
+        dat13.innerText=pro[2].id;
+
+        var dat14=document.createElement("td");
+        row4.appendChild(dat14);
+        dat14.innerText=pro[2].title;
+
+        var dat15=document.createElement("td");
+        row4.appendChild(dat15);
+        dat15.innerText=pro[2].price;
+
+        var dat16=document.createElement("td");
+        row4.appendChild(dat16);
+        dat16.innerText=pro[2].description;
+
+        var dat17=document.createElement("td");
+        row4.appendChild(dat17);
+        dat17.innerText=pro[2].category;
+
+        var dat18=document.createElement("td");
+        row4.appendChild(dat18);
+        var img3=document.createElement("img");
+        img3.src = "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg";
+        dat18.appendChild(img3);
+
+        // FIFTH ROW----->
+
+        var row5=document.createElement("tr");
+        a.appendChild(row5);
+        var dat19=document.createElement("td");
+        row5.appendChild(dat19);
+        dat19.innerText=pro[3].id;
+
+        var dat20=document.createElement("td");
+        row5.appendChild(dat20);
+        dat20.innerText=pro[3].title;
+
+        var dat21=document.createElement("td");
+        row5.appendChild(dat21);
+        dat21.innerText=pro[3].price;
+
+        var dat22=document.createElement("td");
+        row5.appendChild(dat22);
+        dat22.innerText=pro[3].description;
+
+        var dat23=document.createElement("td");
+        row5.appendChild(dat23);
+        dat23.innerText=pro[3].category;
+
+        var dat24=document.createElement("td");
+        row5.appendChild(dat24);
+        var img4=document.createElement("img");
+        img4.src = "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg";
+        dat24.appendChild(img4);
+
+        // SIXTH ROW--->
+
+        var row6=document.createElement("tr");
+        a.appendChild(row6);
+        var dat25=document.createElement("td");
+        row6.appendChild(dat25);
+        dat25.innerText=pro[4].id;
+
+        var dat26=document.createElement("td");
+        row6.appendChild(dat26);
+        dat26.innerText=pro[4].title;
+
+        var dat27=document.createElement("td");
+        row6.appendChild(dat27);
+        dat27.innerText=pro[4].price;
+
+        var dat28=document.createElement("td");
+        row6.appendChild(dat28);
+        dat28.innerText=pro[4].description;
+
+        var dat29=document.createElement("td");
+        row6.appendChild(dat29);
+        dat29.innerText=pro[4].category;
+
+        var dat30=document.createElement("td");
+        row6.appendChild(dat30);
+        var img5=document.createElement("img");
+        img5.src = "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg";
+        dat30.appendChild(img5);
+
+        // SEVENTH ROW--->
+
+        var row7=document.createElement("tr");
+        a.appendChild(row7);
+        var dat31=document.createElement("td");
+        row7.appendChild(dat31);
+        dat31.innerText=pro[5].id;
+
+        var dat32=document.createElement("td");
+        row7.appendChild(dat32);
+        dat32.innerText=pro[5].title;
+
+        var dat33=document.createElement("td");
+        row7.appendChild(dat33);
+        dat33.innerText=pro[5].price;
+
+        var dat34=document.createElement("td");
+        row7.appendChild(dat34);
+        dat34.innerText=pro[5].description;
+
+        var dat35=document.createElement("td");
+        row7.appendChild(dat35);
+        dat35.innerText=pro[5].category;
+
+        var dat36=document.createElement("td");
+        row7.appendChild(dat36);
+        var img6=document.createElement("img");
+        img6.src = "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg";
+        dat36.appendChild(img6);
+
+        // EIGTH ROW--->
+
+        var row8=document.createElement("tr");
+        a.appendChild(row8);
+        var dat37=document.createElement("td");
+        row8.appendChild(dat37);
+        dat37.innerText=pro[6].id;
+
+        var dat38=document.createElement("td");
+        row8.appendChild(dat38);
+        dat38.innerText=pro[6].title;
+
+        var dat39=document.createElement("td");
+        row8.appendChild(dat39);
+        dat39.innerText=pro[6].price;
+
+        var dat40=document.createElement("td");
+        row8.appendChild(dat40);
+        dat40.innerText=pro[6].description;
+
+        var dat41=document.createElement("td");
+        row8.appendChild(dat41);
+        dat41.innerText=pro[6].category;
+
+        var dat42=document.createElement("td");
+        row8.appendChild(dat42);
+        var img7=document.createElement("img");
+        img7.src = "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg";
+        dat42.appendChild(img7);
+
     </script>
 </body>
 </html>
