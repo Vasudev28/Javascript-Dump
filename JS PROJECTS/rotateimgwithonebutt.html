@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hi-nanna-et00364503-1701678655.jpg" alt="" width="90px" height="90px" id="imgg">
+    <button id="but">Click</button>
+    <script>
+        var a=document.getElementById("but");
+        var i=document.getElementById("imgg");
+        a.addEventListener("click",function(){
+        if(i.style.transform=="rotate(90deg)")  {
+        i.style.transform="rotate(0deg)";
+        }
+        else
+        {
+            i.style.transform="rotate(90deg)"; 
+        }
+        })
+        // if(i.style.transform=="rotate(190deg)")  {
+        // i.style.transform="rotate(90deg)";
+        // }
+        // else{
+        //     i.style.transform=="rotate(190deg)";
+        // }
+        // });
+        // var a=document.getElementById("but");
+        // a.addEventListener("click",function(){
+        // var i=document.getElementById("imgg");
+        // );
+        // var a=document.getElementById("but");
+        // a.addEventListener("click",function(){
+        // var i=document.getElementById("imgg");
+        // if(i.style.transform=="rotate(190deg)")  {
+        // i.style.transform="rotate(280deg)";
+        // }
+        // });
+        // var a=document.getElementById("but");
+        // a.addEventListener("click",function(){
+        // var i=document.getElementById("imgg");
+        // if(i.style.transform=="rotate(280deg)")  {
+        // i.style.transform="rotate(340deg)";
+        // }
+        // });
+
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hi-nanna-et00364503-1701678655.jpg" alt="" width="90px" height="90px" id="imgg">
+    <button id="but">Click</button>
+    <script>
+        var a = document.getElementById("but");
+        var i = document.getElementById("imgg");
+        var currentAngle = 0; // Initialize the current angle
+
+        a.addEventListener("click", function() {
+            // Increment the current angle by 90 degrees
+            currentAngle += 90;
+            // Set the new rotation angle
+            i.style.transform = "rotate(" + currentAngle + "deg)";
+        });
+    </script>
+</body>
+</html> -->
