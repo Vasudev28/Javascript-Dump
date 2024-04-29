@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,tr,th{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>class</th>
+        <th>name</th>
+    </tr>
+    <tr id="tr1" onclick="hello()">
+    <td id="id1">1</td>
+    <td>A</td>
+    <td>vasudev</td>
+</tr>
+    <tr id="tr2"onclick="hello()">
+        <td>2</td>
+        <td>B</td>
+        <td>Rakesh</td>
+    </tr>
+</table>
+<script>
+    var v=document.querySelectorAll("th");
+    console.log(v[0]);
+    var b=document.getElementById("tr1");
+    var c=document.getElementById("tr2");
+
+    function hello(){
+
+        b.style.color="red";
+        b.style.width="90px";
+        c.style.color="red";
+        c.style.width="90px";
+    }
+</script>
+</body>
+</html>
