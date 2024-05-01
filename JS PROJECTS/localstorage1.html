@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #tab{
+        width:350px;
+        height:150px;
+        margin-left:450px;
+      }
+      table,tr,td,th{
+        border: 3px solid burlywood;
+      }
+    </style>
+</head>
+<body>
+    <table id="tab">
+        <th colspan="2">USER DETAILS</th>
+        <tr>
+        <td class="data"></td>
+        <td class="given"></td>
+        </tr>
+        <tr>
+        <td class="data"></td>
+        <td class="given"></td>
+        </tr>
+        <tr>
+        <td class="data"></td>
+        <td class="given"></td>
+        </tr>
+        <tr>
+        <td class="data"></td>
+        <td class="given"></td>
+        </tr>
+    </table>
+    <script>
+        var tab=document.getElementById("tab");
+        var row=document.querySelectorAll("tr");
+        var data=document.getElementsByClassName("data");
+        var dat=document.getElementsByClassName("given");
+        var val1=window.localStorage.getItem("USERNAME");
+        var val2=window.localStorage.getItem("EMAIL");
+        var val3=window.localStorage.getItem("PASSWORD");
+        var val4=window.localStorage.getItem("CONFIRM PASSWORD");
+        data[0].innerText="USERNAME ";
+        data[1].innerText="EMAIL ";
+        data[2].innerText="PASSWORD ";
+        data[3].innerText="CONFIRM PASSWORD ";
+        dat[0].innerText=val1;
+        dat[1].innerText=val2;
+        dat[2].innerText=val3;
+        dat[3].innerText=val4;
+    </script>
+</body>
+</html>

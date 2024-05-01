@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>click for prompt</button>
+<script>
+    var bt=document.getElementsByTagName("button");
+    bt[0].addEventListener("click",function(){
+    //     window.localStorage.setItem("pi",22/7);
+    //     alert(window.localStorage.getItem("pi"));
+
+    var a=prompt("Enter Your Name:");
+    var b=prompt("EMail:")
+    var c=prompt("Enter the Password:");
+    var d=prompt("Confirm Your Password:");
+    window.localStorage.setItem("USERNAME",a);
+    window.localStorage.setItem("EMAIL",b);
+    window.localStorage.setItem("PASSWORD",c);
+    window.localStorage.setItem("CONFIRM PASSWORD",d);
+    window.location.assign("./localstorage1.html")
+    })
+
+
+</script>
+</body>
+</html>
