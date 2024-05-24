@@ -8,4 +8,4 @@ function rev(v)
     console.log(str);
     return v;
 }
-rev([7,8,9])
+rev([7,8,9]);
