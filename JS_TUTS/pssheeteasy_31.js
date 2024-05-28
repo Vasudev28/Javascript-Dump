@@ -1,0 +1,8 @@
+//USING METHODS, IF SAID AT END WE CAN USE PUSH AND IF SAID AT THE BEGINNING THEN WE CAN USE UNSHIFT
+
+var a=[1,2,3,5,6,90,12,15];
+var b=a.splice(3,0,"vanakkam");
+console.log(a);
+
+//WITHOUT METHODS
+
